@@ -1,0 +1,482 @@
+@import "../scss/breakpoints.scss";
+
+.slide-wrapper {
+  font-family: "Libre Baskerville", serif;
+  margin-top: 24px;
+
+  @include md {
+    margin-top: 40px;
+    margin-inline: 16px;
+  }
+
+  @include xl {
+    margin: 100px 0 75px 0;
+    height: 624px;
+    position: relative;
+    padding-inline: 16px;
+  }
+
+  .slide-header {
+    position: relative;
+
+    @include md {
+      margin-bottom: 139px;
+    }
+
+    @include lg {
+      max-width: 800px;
+      margin-inline: auto;
+    }
+
+    @include xl {
+      max-width: none;
+    }
+
+    .slide-img {
+      min-width: 327px;
+      min-height: 280px;
+      height: 0.74 * 75vw;
+      max-height: 315px;
+
+      @include md {
+        min-width: auto;
+        min-height: 560px;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .view-image-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 10rem;
+      background: #000000b7;
+      font-size: 0.7rem;
+      padding: 12px 7px;
+      color: #fff;
+      text-align: center;
+      letter-spacing: 0.2rem;
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      cursor: pointer;
+      // z-index: 100;
+
+      @include md {
+        height: 40px;
+        width: 152px;
+        font-size: 10px;
+        letter-spacing: 2.14px;
+        line-height: 12px;
+        top: 500px;
+      }
+
+      img {
+        width: 12px;
+        color: #fff;
+        margin-right: 0.7rem;
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.25);
+      }
+    }
+  }
+  .slide-info {
+    width: 80%;
+    margin-top: -2rem;
+    margin-bottom: 54px;
+    position: relative;
+
+    @include sm {
+      width: auto;
+      position: absolute;
+      top: 130px;
+      right: 30px;
+    }
+
+    @include md {
+      top: 163px;
+      left: 283px;
+    }
+
+    @include lg {
+      left: 40%;
+      max-width: 500px;
+    }
+
+    @include xl {
+      top: 30px;
+      left: 410px;
+    }
+
+    .slide-art-info {
+      background-color: rgb(255, 255, 255);
+      padding: 24px;
+      width: 280px;
+
+      @include sm {
+        width: auto;
+      }
+
+      @include md {
+        padding: 0 0 67px 65px;
+      }
+
+      @include xl {
+        width: 405px;
+        margin: 0;
+      }
+    }
+
+    img {
+      height: 64px;
+
+      @include md {
+        height: 128px;
+        margin-left: 230px;
+      }
+
+      @include xl {
+        margin-left: 80px;
+        margin-top: 258px;
+      }
+    }
+
+    .slide-art-name {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 8px;
+
+      @include md {
+        font-size: 56px;
+        line-height: 64px;
+        margin-bottom: 24px;
+        width: 315px;
+      }
+    }
+
+    .slide-artist-name {
+      font-size: 15px;
+      line-height: 19px;
+      color: #7d7d7d;
+    }
+
+    .slide-artist-thumbnail {
+      margin-left: 1rem;
+
+      @include md {
+        text-align: right;
+        margin-right: 100px;
+      }
+
+      @include xl {
+        position: absolute;
+        top: 496px;
+        left: 80px;
+      }
+
+      img {
+        margin: 0;
+      }
+    }
+  }
+
+  .slide-txt {
+    line-height: 1.7rem;
+    color: #7d7d7d;
+    position: relative;
+    margin-bottom: 2rem;
+
+    @include md {
+      width: 457px;
+      margin-inline: auto;
+    }
+
+    @include xl {
+      position: absolute;
+      top: 50px;
+      right: 58px;
+      z-index: 1;
+      margin: 0;
+    }
+  }
+
+  .slide-background-txt {
+    position: absolute;
+    left: 30.13%;
+    right: 6.4%;
+    top: -70px;
+    font-weight: bold;
+    text-align: right;
+    font-size: 100px;
+    line-height: 100px;
+    color: #f3f3f3;
+    z-index: -1;
+    font-weight: 700;
+
+    @include md {
+      font-size: 200px;
+      line-height: 150px;
+      left: 0;
+      margin-left: -120px;
+      text-align: left;
+    }
+
+    @include xl {
+      text-align: right;
+      top: -50px;
+      right: 0;
+    }
+  }
+
+  .slide-main-txt {
+    margin: 0.5rem 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 68px;
+
+    @include md {
+      margin-bottom: 40px;
+    }
+
+    @include xl {
+      width: 350px;
+      margin-bottom: 81px;
+      margin-top: 60px;
+    }
+  }
+}
+
+.slide-source-link {
+  margin-bottom: 68px;
+
+  @include md {
+    margin-bottom: 53px;
+  }
+
+  @include xl {
+    position: absolute;
+    top: 505px;
+    margin: 0;
+  }
+
+  a {
+    color: #7d7d7d;
+    text-decoration: underline;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 1.92857px;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  .close {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  /* Add Animation */
+  .modal-content {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+}
+
+// @media screen and (min-width: 768px) {
+//   .slide-wrapper {
+//     padding: 35px;
+
+//     .slide-header {
+//       width: 65vw;
+//       height: 55vh;
+//       position: relative;
+
+//       .view-image-link {
+//         width: 12rem;
+//         top: 500px;
+//         left: 20px;
+
+//         img {
+//           width: 0.8rem;
+//           color: #fff;
+//           margin-right: 0.7rem;
+//         }
+//       }
+//     }
+
+//     .slide-info {
+//       position: absolute;
+//       top: 155px;
+//       right: 0;
+//       width: 70%;
+//       min-height: 20%;
+//       padding: 10px 20px 20px 50px;
+
+//       .slide-art-info {
+//         padding: 0 60px 50px 60px;
+//       }
+
+//       .slide-art-name {
+//         font-weight: bold;
+//         padding: 3px;
+//         font-size: 3.3rem;
+//         margin-bottom: 1rem;
+//         // position: relative;
+//       }
+
+//       .slide-artist-name {
+//         padding: 3px;
+//         font-size: 0.8rem;
+//         color: #7d7d7d;
+//       }
+
+//       .slide-artist-thumbnail {
+//         width: 35%;
+//         margin-left: auto;
+
+//         img {
+//           width: 130px;
+//           height: 130px;
+//         }
+//       }
+//     }
+
+//     .slide-txt {
+//       .slide-background-txt {
+//         font-size: 12rem;
+//         text-align: left;
+//         margin-top: 7rem;
+//       }
+
+//       .slide-main-txt {
+//         margin: 0.5rem auto;
+//         font-size: 0.92rem;
+//         width: 70%;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 996px) {
+//   .slide-wrapper {
+//     padding: 60px 35px;
+//     display: flex;
+//     flex-direction: row;
+//     width: 100vw;
+//     height: 100vh;
+//     justify-content: space-around;
+
+//     .slide-header {
+//       width: 150%;
+//       height: 65vh;
+//       position: relative;
+
+//       .slide-img {
+//         width: 70%;
+//         overflow: hidden;
+
+//         img {
+//           width: 100%;
+//         }
+//       }
+
+//       .view-image-link {
+//         width: 12rem;
+//         top: 500px;
+//         left: 20px;
+
+//         img {
+//           width: 0.8rem;
+//           color: #fff;
+//           margin-right: 0.7rem;
+//         }
+//       }
+//     }
+
+//     .slide-info {
+//       top: 145px;
+//       left: 400px;
+//       width: 40%;
+//       min-height: 20%;
+//       padding: 10px 60px 20px 50px;
+
+//       .slide-art-info {
+//         padding: 0 60px 50px 60px;
+//       }
+
+//       .slide-artist-thumbnail {
+//         width: 35%;
+//         margin-left: 4rem;
+//         margin-top: 18rem;
+//       }
+//     }
+
+//     .slide-txt {
+//       .slide-background-txt {
+//         text-align: right;
+//         width: 50%;
+//         margin-left: auto;
+//       }
+
+//       .slide-main-txt {
+//         margin: 0.5rem 5rem 0.5rem auto;
+//         font-size: 0.92rem;
+//         width: 40%;
+//         line-height: 2rem;
+//       }
+//     }
+//   }
+// }
